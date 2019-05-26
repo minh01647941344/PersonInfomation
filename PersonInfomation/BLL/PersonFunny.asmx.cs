@@ -23,7 +23,7 @@ namespace PersonInfomation.BLL
     {
 
         [WebMethod]
-        public string personList()
+        public string getPersonList()
         {
             string strSQL = "Select * from Person";
 
@@ -39,7 +39,6 @@ namespace PersonInfomation.BLL
                             lastName = item.Field<string>("LastName"),
                             age = item.Field<int>("Age")
                         };
-
             //Convert EnumerableRow to array
             var array = query.ToArray();
             var json = WriteJSon.writeFileJSON(array);

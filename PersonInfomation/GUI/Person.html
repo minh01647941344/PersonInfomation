@@ -46,9 +46,7 @@
                     </tr>
                 </tfoot>
             </table>
-
         </div>
-
         <div class="panel panel-danger" style="float: right; margin-top: 2%; width:48%">
             <div class="panel-heading">
                 <h3>Removed Person List</h3>
@@ -113,10 +111,11 @@
             </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function () {
+            ko.applyBindings(ViewModel);
+        })
+    </script>
 </body>
 </html>
-<script>
-    $(document).ready(function () {
-        ko.applyBindings(ViewModel);
-    })
-</script>
+
