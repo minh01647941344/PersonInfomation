@@ -6,21 +6,21 @@ using System.Linq;
 using System.Web;
 using PersonInfomation.Extensions_Function;
 using System.Collections;
+using PersonInfomation.BLL;
 
 namespace PersonInfomation.Extensions_Function
 {
     public class WriteJSon
     {
-        public static String writeFileJSON(IEnumerable<object> array)
-        {
-            //Create object serializer
-            JsonSerializer serializer = new JsonSerializer();                    
-            //Parse JSON
-            var json = JsonConvert.SerializeObject(array);
+        public static String writeFileJSON(List<ModelPerson> array)
+        {                 
             //Sort Array
-            string result = SortArrayFunction.sortArray(json);
+            List<ModelPerson> result = SortArrayFunction.sortArray(array);
 
-            return result;
+            //Parse JSON
+            var parseJson = JsonConvert.SerializeObject(result);
+
+            return parseJson;
         } 
     }
 }

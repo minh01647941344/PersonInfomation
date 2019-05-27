@@ -65,7 +65,7 @@ var filterArray = function () {
     } else {
         xhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xhttp.onreadystatechange = function () {       
+    xhttp.onreadystatechange = function () {
         //check code connect
         if (this.readyState == 4 && this.status == 200) {
             var x = this.responseText;
@@ -82,7 +82,7 @@ var filterArray = function () {
         }
     };
     //Open and get data from backend
-    xhttp.open("POST", "/BLL/PersonFunny.asmx/personList", true);
+    xhttp.open("POST", "/BLL/PersonFunny.asmx/getPersonList", false);
     xhttp.send();
 
     return this.filterArray;

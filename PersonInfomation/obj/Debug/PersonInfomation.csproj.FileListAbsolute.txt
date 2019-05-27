@@ -27,7 +27,6 @@ C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\bin\rosly
 C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\obj\Debug\PersonInfomation.csprojAssemblyReference.cache
 C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\obj\Debug\PersonInfomation.csproj.CoreCompileInputs.cache
 C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\obj\Debug\PersonInfomation.csproj.CopyComplete
 C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\obj\Debug\PersonInfomation.pdb
@@ -35,3 +34,4 @@ C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\bin\Newto
 C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\bin\PersonInfomation.dll.config
 C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\bin\PersonInfomation.dll
 C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\obj\Debug\PersonInfomation.dll
+C:\Users\minh.nguyenvan\source\repos\PersonInfomation\PersonInfomation\obj\Debug\PersonInfomation.csprojAssemblyReference.cache

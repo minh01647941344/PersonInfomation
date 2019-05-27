@@ -21,9 +21,8 @@ namespace PersonInfomation.BLL
     // [System.Web.Script.Services.ScriptService]
     public class PersonFunny : System.Web.Services.WebService
     {
-
         [WebMethod]
-        public string personList()
+        public string getPersonList()
         {
             string strSQL = "Select * from Person";
 
@@ -33,18 +32,18 @@ namespace PersonInfomation.BLL
             //Use LINQ to Dataset
             var query = from item in person.AsEnumerable()
                         where ConditionFunction.filterCondition(item) == true
-                        select new
+                        select new ModelPerson
                         {
                             firstName = item.Field<string>("FirstName"),
                             lastName = item.Field<string>("LastName"),
                             age = item.Field<int>("Age")
                         };
+            //Convert EnumberableRowCollection to List<ModelPerson>
+            List<ModelPerson> personList = query.ToList();
+            //Sort Array and parse to JSON
+            var responseOfAjax = WriteJSon.writeFileJSON(personList);
 
-            //Convert EnumerableRow to array
-            var array = query.ToArray();
-            var json = WriteJSon.writeFileJSON(array);
-
-            return json;
+            return responseOfAjax;
         }
     }
 }

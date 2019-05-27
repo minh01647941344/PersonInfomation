@@ -15,5 +15,10 @@ namespace PersonInfomation.BLL
         {
             throw new NotImplementedException();
         }
+
+        public static explicit operator ModelPerson(List<object> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
