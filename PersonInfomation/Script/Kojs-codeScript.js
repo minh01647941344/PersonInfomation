@@ -88,23 +88,6 @@ var filterArray = function () {
     return this.filterArray;
 }
 
-//Call Ajax - Problem here
-//var getDataFromAjax = function () { 
-//    var self = this;
-//    this.filterArray = [];
-//    $.getJSON("/Script/data.json", function (result) {
-//        if (!result.firstName) {
-//            for (key in result) {
-//                self.filterArray.push(new createUser(result[key].firstName, result[key].lastName, result[key].age));
-//            }
-//        } else {
-//            self.filterArray.push(new createUser(result.firstName, result.lastName, result.age));
-//        }
-//    });
-//    return this.filterArray;
-//}
-
-
 //Sum Age Available
 var totalAge = function (array) {
     var sumValue = 0;

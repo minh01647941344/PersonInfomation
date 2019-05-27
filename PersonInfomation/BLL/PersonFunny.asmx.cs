@@ -38,6 +38,7 @@ namespace PersonInfomation.BLL
                             lastName = item.Field<string>("LastName"),
                             age = item.Field<int>("Age")
                         };
+
             //Convert EnumberableRowCollection to List<ModelPerson>
             List<ModelPerson> personList = query.ToList();
             //Sort Array and parse to JSON
